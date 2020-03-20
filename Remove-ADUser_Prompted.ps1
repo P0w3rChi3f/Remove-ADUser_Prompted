@@ -41,7 +41,7 @@
 
 # Tests to see if user has files and removes them and deletes the user account
 
-    if ($samAccount -ne $null){
+    if ($null -ne $samAccount){
         
         try {
             Remove-Item $Path -Recurse -Force -Verbose 
